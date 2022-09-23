@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/roll_button"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:height="70dp"
+        android:text="@string/roll_button_text"
+        app:cornerRadius="100dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/roll_icon" />
+
+    <ImageView
+        android:id="@+id/roll_icon"
+        android:layout_width="0dp"
+        android:layout_height="205dp"
+        android:layout_gravity="center_horizontal|center_vertical"
+        android:contentDescription="Roll image"
+        android:maxHeight="100dp"
+        android:minHeight="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.19999999"
+        app:srcCompat="@drawable/dices" />
+
+    <TextView
+        android:id="@+id/roll_result_text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:height="0dp"
+        android:gravity="center_horizontal|center_vertical"
+        android:maxWidth="200dp"
+        android:textSize="34sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/roll_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/roll_icon" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
